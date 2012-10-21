@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+ <display>
+ 	<category name="category.sample.bookCatalog">
+ 		<portlet id="bookCatalog" />
+ 	</category>
+ </display>
