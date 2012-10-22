@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 public class LoginPage extends AbstractPage {
 
     public void open() {
-        get(BASE_URL + "pages/login");
+        get(BASE_URL);
     }
 
     public LoginPage(WebDriverProvider driverProvider) {
@@ -22,7 +22,7 @@ public class LoginPage extends AbstractPage {
     }
 
     public PortalPage clickLoginButton(){
-    	clickOnElementWithText("input","Login");
+    	findElement(By.id("j_login")).click();
         return new PortalPage(webDriverProvider);
     }
     

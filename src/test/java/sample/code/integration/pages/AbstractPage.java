@@ -20,7 +20,7 @@ public abstract class AbstractPage extends WebDriverPage {
 
     protected static final String BASE_URL = "http://localhost:8080/pluto/";
 
-    protected WebDriverProvider webDriverProvider;
+    protected final WebDriverProvider webDriverProvider;
 
     public AbstractPage(WebDriverProvider driverProvider) {
         super(driverProvider);
